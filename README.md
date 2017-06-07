@@ -1,2 +1,2 @@
 # ViGi
-This web app is represent social network for developers, engineers etc. 
+This web app is represented social network for developers, engineers etc. 
