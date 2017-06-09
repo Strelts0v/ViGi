@@ -1,6 +1,6 @@
 package com.gv.VG.config;
 
-import com.gv.VG.security.services.impls.UserDetailsServiceImpl;
+import com.gv.VG.services.impls.UserDetailsServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
