@@ -37,7 +37,7 @@
             <p><a class="btn btn-lg btn-success" href="<c:url value="/login" />" role="button">Log in</a></p>
         </sec:authorize>
         <sec:authorize access="isAuthenticated()">
-            <p>Your login: <sec:authentication property="principal.username" /></p>
+            <p>Your email: <sec:authentication property="principal.username" /></p>
             <p><a class="btn btn-lg btn-danger" href="<c:url value="/logout" />" role="button">Logout</a></p>
 
         </sec:authorize>
