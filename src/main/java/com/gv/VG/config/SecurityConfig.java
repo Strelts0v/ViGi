@@ -1,5 +1,6 @@
 package com.gv.VG.config;
 
+import com.gv.VG.security.UserAuthenticationSuccessHandler;
 import com.gv.VG.services.impls.UserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -36,17 +37,19 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and();
 
         http.formLogin()
-                .loginPage("/login")
+                .loginPage("/signin")
                 .loginProcessingUrl("/j_spring_security_check")
-                .failureUrl("/login?error")
+                .failureUrl("/signin?error")
                 .usernameParameter("j_username")
                 .passwordParameter("j_password")
+                .defaultSuccessUrl("/profile")
+                .successHandler(new UserAuthenticationSuccessHandler())
                 .permitAll();
 
         http.logout()
                 .permitAll()
                 .logoutUrl("/logout")
-                .logoutSuccessUrl("/login?logout")
+                .logoutSuccessUrl("/home?logout")
                 .invalidateHttpSession(true);
 
     }
