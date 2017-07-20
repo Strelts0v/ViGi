@@ -21,10 +21,10 @@ public class WebAppConfig extends WebMvcConfigurerAdapter {
         registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
     }
 
-    @Bean
+    @Bean(name = "userDetailsService")
     public UserDetailsService getUserDetailsService(){
-    return new UserDetailsServiceImpl();
-}
+        return new UserDetailsServiceImpl();
+    }
 
     @Bean
     public UrlBasedViewResolver setupViewResolver() {
