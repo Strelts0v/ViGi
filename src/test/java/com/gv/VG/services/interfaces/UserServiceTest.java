@@ -28,6 +28,12 @@ public class UserServiceTest {
     @Resource
     private UserService userService;
 
+    private final int TEST_ID_1 = 1;
+    private final String TEST_USER_EMAIL_ID_1 = "gleb.streltsov.4by@gmail.com";
+    private final String TEST_USER_PASSWORD_ID_1 = "f0ac2325b6bd0302bcd8862ca5852f99dcfe5a91";
+    private final int TEST_USER_MASK_ID_1 = 11;
+    private final User TEST_USER_ID_1 = new User(TEST_ID_1, TEST_USER_EMAIL_ID_1, TEST_USER_PASSWORD_ID_1, TEST_USER_MASK_ID_1);
+
     @Before
     public void setUpEntityManager() throws Exception {
         em = emf.createEntityManager();
@@ -35,8 +41,9 @@ public class UserServiceTest {
 
     @Test
     public void getExistedUserTest() throws Exception {
-        User user = userService.getUser("gleb.streltsov.4by@gmail.com");
-        Assert.assertEquals(user.getEmail(), "gleb.streltsov.4by@gmail.com");
+        String errorMessage = "Expected and actual users are different.";
+        User user = userService.getUser(TEST_USER_EMAIL_ID_1);
+        Assert.assertEquals(errorMessage, user, TEST_USER_ID_1);
         Assert.assertEquals(user.getPassword(), "f0ac2325b6bd0302bcd8862ca5852f99dcfe5a91");
     }
 }
