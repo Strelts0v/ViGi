@@ -14,26 +14,26 @@
   <!-- for ios 7 style, multi-resolution icon of 152x152 -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
-  <link rel="apple-touch-icon" href="images/logo.png">
+  <link rel="apple-touch-icon" href="/resources/images/logo.png">
   <meta name="apple-mobile-web-app-title" content="Flatkit">
   <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
   <meta name="mobile-web-app-capable" content="yes">
-  <link rel="shortcut icon" sizes="196x196" href="images/logo.png">
+  <link rel="shortcut icon" sizes="196x196" href="/resources/images/logo.png">
   
   <!-- style -->
-  <link rel="stylesheet" href="css/animate.css/animate.min.css" type="text/css" />
-  <link rel="stylesheet" href="css/glyphicons/glyphicons.css" type="text/css" />
-  <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" type="text/css" />
-  <link rel="stylesheet" href="css/material-design-icons/material-design-icons.css" type="text/css" />
-  <link rel="stylesheet" href="css/ionicons/css/ionicons.min.css" type="text/css" />
-  <link rel="stylesheet" href="css/simple-line-icons/css/simple-line-icons.css" type="text/css" />
-  <link rel="stylesheet" href="css/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="/resources/css/animate.css/animate.min.css" type="text/css" />
+  <link rel="stylesheet" href="/resources/css/glyphicons/glyphicons.css" type="text/css" />
+  <link rel="stylesheet" href="/resources/css/font-awesome/css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="/resources/css/material-design-icons/material-design-icons.css" type="text/css" />
+  <link rel="stylesheet" href="/resources/css/ionicons/css/ionicons.min.css" type="text/css" />
+  <link rel="stylesheet" href="/resources/css/simple-line-icons/css/simple-line-icons.css" type="text/css" />
+  <link rel="stylesheet" href="/resources/css/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
 
   <!-- build:css css/styles/app.min.css -->
-  <link rel="stylesheet" href="css/styles/app.css" type="text/css" />
-  <link rel="stylesheet" href="css/styles/style.css" type="text/css" />
+  <link rel="stylesheet" href="/resources/css/styles/app.css" type="text/css" />
+  <link rel="stylesheet" href="/resources/css/styles/style.css" type="text/css" />
   <!-- endbuild -->
-  <link rel="stylesheet" href="css/styles/font.css" type="text/css" />
+  <link rel="stylesheet" href="/resources/css/styles/font.css" type="text/css" />
 </head>
 <body>
   <div class="app" id="app">
@@ -47,7 +47,7 @@
       <div class="navbar no-radius">
         <!-- brand -->
         <a href="index.html" class="navbar-brand">
-        	<div data-ui-include="'images/logo.svg'"></div>
+        	<div data-ui-include="'/resources/images/logo.svg'"></div>
         	<img src="images/logo.png" alt="." class="hide">
         	<span class="hidden-folded inline">aside</span>
         </a>
@@ -458,10 +458,10 @@
           <a data-toggle="dropdown">
               <div class="pull-left">
                 <div class="inline"><span class="avatar w-40 grey">JR</span></div>
-                <img src="images/a0.jpg" alt="..." class="w-40 img-circle hide">
+                <img src="/resources/images/a0.jpg" alt="..." class="w-40 img-circle hide">
               </div>
               <div class="clear hidden-folded p-x">
-                <span class="block _500 text-muted">Jean Reyes</span>
+                <span class="block _500 text-muted">${profile.firstName} ${profile.lastName}</span>
                 <div class="progress-xxs m-y-sm lt progress">
                     <div class="progress-bar info" style="width: 15%;">
                     </div>
@@ -533,7 +533,7 @@
                           <ul class="list-group list-group-gap m-a-0">
                             <li class="list-group-item dark-white box-shadow-z0 b">
                               <span class="pull-left m-r">
-                                <img src="images/a0.jpg" alt="..." class="w-40 img-circle">
+                                <img src="/resources/images/a0.jpg" alt="..." class="w-40 img-circle">
                               </span>
                               <span class="clear block">
                                 Use awesome <a href="#" class="text-primary">animate.css</a><br>
@@ -542,7 +542,7 @@
                             </li>
                             <li class="list-group-item dark-white box-shadow-z0 b">
                               <span class="pull-left m-r">
-                                <img src="images/a1.jpg" alt="..." class="w-40 img-circle">
+                                <img src="/resources/images/a1.jpg" alt="..." class="w-40 img-circle">
                               </span>
                               <span class="clear block">
                                 <a href="#" class="text-primary">Joe</a> Added you as friend<br>
@@ -551,7 +551,7 @@
                             </li>
                             <li class="list-group-item dark-white text-color box-shadow-z0 b">
                               <span class="pull-left m-r">
-                                <img src="images/a2.jpg" alt="..." class="w-40 img-circle">
+                                <img src="/resources/images/a2.jpg" alt="..." class="w-40 img-circle">
                               </span>
                               <span class="clear block">
                                 <a href="#" class="text-primary">Danie</a> sent you a message<br>
@@ -566,7 +566,7 @@
                   <li class="nav-item dropdown">
                     <a class="nav-link clear" data-toggle="dropdown">
                       <span class="avatar w-32">
-                        <img src="images/a3.jpg" class="w-full rounded" alt="...">
+                        <img src="/resources/images/a3.jpg" class="w-full rounded" alt="...">
                       </span>
                     </a>
                     <div class="dropdown-menu w dropdown-menu-scale pull-right">
@@ -603,20 +603,20 @@
 
   <div class="item">
     <div class="item-bg">
-      <img src="images/a2.jpg" class="blur opacity-3">
+      <img src="/resources/images/a2.jpg" class="blur opacity-3">
     </div>
     <div class="p-a-md">
       <div class="row m-t">
         <div class="col-sm-7">
           <a href="#" class="pull-left m-r-md">
             <span class="avatar w-96">
-              <img src="images/a2.jpg">
+              <img src="/resources/images/a2.jpg">
               <i class="on b-white"></i>
             </span>
           </a>
           <div class="clear m-b">
-            <h4 class="m-a-0 m-b-sm">Jean Reyes</h4>
-            <p class="text-muted"><span class="m-r">UX/UI Director</span> <small><i class="fa fa-map-marker m-r-xs"></i>London, UK</small></p>
+            <h4 class="m-a-0 m-b-sm">${profile.firstName} ${profile.lastName}</h4>
+            <p class="text-muted"><span class="m-r">${profile.position}</span> <small><i class="fa fa-map-marker m-r-xs"></i>${profile.city}</small></p>
             <div class="block clearfix m-b">
               <a href="" class="btn btn-icon btn-social rounded b-a btn-sm">
                 <i class="fa fa-facebook"></i>
@@ -642,7 +642,7 @@
           </div>
         </div>
         <div class="col-sm-5">
-          <p class="text-md profile-status">I am feeling good!</p>
+          <p class="text-md profile-status">${profile.status}</p>
           <button class="btn btn-sm rounded btn-outline b-success" data-toggle="collapse" data-target="#editor">Edit</button>
           <div class="collapse box m-t-sm" id="editor">
             <textarea class="form-control no-border" rows="2" placeholder="Type something..."></textarea>
@@ -767,7 +767,7 @@
               </div>
               <div class="sl-item">
                 <div class="sl-left">
-                  <img src="images/a2.jpg" class="img-circle">
+                  <img src="/resources/images/a2.jpg" class="img-circle">
                 </div>
                 <div class="sl-content">
                   <div class="sl-date text-muted">8:30</div>
@@ -781,7 +781,7 @@
               </div>
               <div class="sl-item">
                 <div class="sl-left">
-                  <img src="images/a3.jpg" class="img-circle">
+                  <img src="/resources/images/a3.jpg" class="img-circle">
                 </div>
                 <div class="sl-content">
                   <div class="sl-date text-muted">Wed, 25 Mar</div>
@@ -790,7 +790,7 @@
               </div>
               <div class="sl-item">
                 <div class="sl-left">
-                  <img src="images/a4.jpg" class="img-circle">
+                  <img src="/resources/images/a4.jpg" class="img-circle">
                 </div>
                 <div class="sl-content">
                   <div class="sl-date text-muted">Thu, 10 Mar</div>
@@ -799,7 +799,7 @@
               </div>
               <div class="sl-item">
                 <div class="sl-left">
-                  <img src="images/a3.jpg" class="img-circle">
+                  <img src="/resources/images/a3.jpg" class="img-circle">
                 </div>
                 <div class="sl-content">
                   <div class="sl-date text-muted">Sat, 5 Mar</div>
@@ -812,7 +812,7 @@
               </div>
               <div class="sl-item">
                 <div class="sl-left">
-                  <img src="images/a2.jpg" class="img-circle">
+                  <img src="/resources/images/a2.jpg" class="img-circle">
                 </div>
                 <div class="sl-content">
                   <div class="sl-date text-muted">Sun, 11 Feb</div>
@@ -821,7 +821,7 @@
               </div>
               <div class="sl-item">
                 <div class="sl-left">
-                  <img src="images/a5.jpg" class="img-circle">
+                  <img src="/resources/images/a5.jpg" class="img-circle">
                 </div>
                 <div class="sl-content">
                   <div class="sl-date text-muted">Thu, 17 Jan</div>
@@ -888,7 +888,7 @@
                   <div class="list-item box r m-b">
                     <a herf class="list-left">
                       <span class="w-40 avatar">
-                        <img src="images/a0.jpg" alt="...">
+                        <img src="/resources/images/a0.jpg" alt="...">
                         <i class="on b-white bottom"></i>
                       </span>
                     </a>
@@ -902,7 +902,7 @@
                   <div class="list-item box r m-b">
                     <a herf="" class="list-left">
                       <span class="w-40 avatar">
-                        <img src="images/a1.jpg" alt="...">
+                        <img src="/resources/images/a1.jpg" alt="...">
                         <i class="on b-white bottom"></i>
                       </span>
                     </a>
@@ -916,7 +916,7 @@
                   <div class="list-item box r m-b">
                     <a herf="" class="list-left">
                       <span class="w-40 avatar">
-                        <img src="images/a2.jpg" alt="...">
+                        <img src="/resources/images/a2.jpg" alt="...">
                         <i class="away b-white bottom"></i>
                       </span>
                     </a>
@@ -930,7 +930,7 @@
                   <div class="list-item box r m-b">
                     <a herf="" class="list-left">
                       <span class="w-40 avatar">
-                        <img src="images/a3.jpg" alt="...">
+                        <img src="/resources/images/a3.jpg" alt="...">
                         <i class="busy b-white bottom"></i>
                       </span>
                     </a>
@@ -944,7 +944,7 @@
                   <div class="list-item box r m-b">
                     <a herf="" class="list-left">
                       <span class="w-40 avatar">
-                        <img src="images/a4.jpg" alt="...">
+                        <img src="/resources/images/a4.jpg" alt="...">
                         <i class="on b-white bottom"></i>
                       </span>
                     </a>
@@ -958,7 +958,7 @@
                   <div class="list-item box r m-b">
                     <a herf="" class="list-left">
                       <span class="w-40 avatar">
-                        <img src="images/a5.jpg" alt="...">
+                        <img src="/resources/images/a5.jpg" alt="...">
                         <i class="on b-white bottom"></i>
                       </span>
                     </a>
@@ -972,7 +972,7 @@
                   <div class="list-item box r m-b">
                     <a herf="" class="list-left">
                       <span class="w-40 avatar">
-                        <img src="images/a6.jpg" alt="...">
+                        <img src="/resources/images/a6.jpg" alt="...">
                         <i class="on b-white bottom"></i>
                       </span>
                     </a>
@@ -986,7 +986,7 @@
                   <div class="list-item box r m-b">
                     <a herf="" class="list-left">
                       <span class="w-40 avatar">
-                        <img src="images/a7.jpg" alt="...">
+                        <img src="/resources/images/a7.jpg" alt="...">
                         <i class="away b-white bottom"></i>
                       </span>
                     </a>
@@ -1000,7 +1000,7 @@
                   <div class="list-item box r m-b">
                     <a herf="" class="list-left">
                       <span class="w-40 avatar">
-                        <img src="images/a8.jpg" alt="...">
+                        <img src="/resources/images/a8.jpg" alt="...">
                         <i class="busy b-white bottom"></i>
                       </span>
                     </a>
@@ -1089,7 +1089,7 @@
                 <li class="list-item">
                   <a herf class="list-left">
                     <span class="w-40 avatar">
-                      <img src="images/a4.jpg" alt="...">
+                      <img src="/resources/images/a4.jpg" alt="...">
                       <i class="on b-white bottom"></i>
                     </span>
                   </a>
@@ -1101,7 +1101,7 @@
                 <li class="list-item">
                   <a herf class="list-left">
                     <span class="w-40 avatar">
-                      <img src="images/a5.jpg" alt="...">
+                      <img src="/resources/images/a5.jpg" alt="...">
                       <i class="on b-white bottom"></i>
                     </span>
                   </a>
@@ -1113,7 +1113,7 @@
                 <li class="list-item">
                   <a herf class="list-left">
                     <span class="w-40 avatar">
-                      <img src="images/a6.jpg" alt="...">
+                      <img src="/resources/images/a6.jpg" alt="...">
                       <i class="busy b-white bottom"></i>
                     </span>
                   </a>
@@ -1125,7 +1125,7 @@
                 <li class="list-item">
                   <a herf class="list-left">
                     <span class="w-40 avatar">
-                      <img src="images/a7.jpg" alt="...">
+                      <img src="/resources/images/a7.jpg" alt="...">
                       <i class="away b-white bottom"></i>
                     </span>
                   </a>
@@ -1151,7 +1151,7 @@
           <div class="box info">
             <div class="box-body">
               <a href="#" class="pull-left m-r">
-                <img src="images/a0.jpg" class="img-circle w-40">
+                <img src="/resources/images/a0.jpg" class="img-circle w-40">
               </a>
               <div class="clear">
                 <a href="#">@Mike Mcalidek</a>
@@ -1281,32 +1281,32 @@
 
 <!-- build:js scripts/app.min.js -->
 <!-- jQuery -->
-  <script src="libs/jquery/dist/jquery.js"></script>
+  <script src="/resources/libs/jquery/dist/jquery.js"></script>
 <!-- Bootstrap -->
-  <script src="libs/tether/dist/js/tether.min.js"></script>
-  <script src="libs/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="/resources/libs/tether/dist/js/tether.min.js"></script>
+  <script src="/resources/libs/bootstrap/dist/js/bootstrap.js"></script>
 <!-- core -->
-  <script src="libs/jQuery-Storage-API/jquery.storageapi.min.js"></script>
-  <script src="libs/PACE/pace.min.js"></script>
-  <script src="libs/jquery-pjax/jquery.pjax.js"></script>
-  <script src="libs/blockUI/jquery.blockUI.js"></script>
-  <script src="libs/jscroll/jquery.jscroll.min.js"></script>
+  <script src="/resources/libs/jQuery-Storage-API/jquery.storageapi.min.js"></script>
+  <script src="/resources/libs/PACE/pace.min.js"></script>
+  <script src="/resources/libs/jquery-pjax/jquery.pjax.js"></script>
+  <script src="/resources/libs/blockUI/jquery.blockUI.js"></script>
+  <script src="/resources/libs/jscroll/jquery.jscroll.min.js"></script>
 
-  <script src="scripts/config.lazyload.js"></script>
-  <script src="scripts/ui-load.js"></script>
-  <script src="scripts/ui-jp.js"></script>
-  <script src="scripts/ui-include.js"></script>
-  <script src="scripts/ui-device.js"></script>
-  <script src="scripts/ui-form.js"></script>
-  <script src="scripts/ui-modal.js"></script>
-  <script src="scripts/ui-nav.js"></script>
-  <script src="scripts/ui-list.js"></script>
-  <script src="scripts/ui-screenfull.js"></script>
-  <script src="scripts/ui-scroll-to.js"></script>
-  <script src="scripts/ui-toggle-class.js"></script>
-  <script src="scripts/ui-taburl.js"></script>
-  <script src="scripts/app.js"></script>
-  <script src="scripts/ajax.js"></script>
+  <script src="/resources/scripts/config.lazyload.js"></script>
+  <script src="/resources/scripts/ui-load.js"></script>
+  <script src="/resources/scripts/ui-jp.js"></script>
+  <script src="/resources/scripts/ui-include.js"></script>
+  <script src="/resources/scripts/ui-device.js"></script>
+  <script src="/resources/scripts/ui-form.js"></script>
+  <script src="/resources/scripts/ui-modal.js"></script>
+  <script src="/resources/scripts/ui-nav.js"></script>
+  <script src="/resources/scripts/ui-list.js"></script>
+  <script src="/resources/scripts/ui-screenfull.js"></script>
+  <script src="/resources/scripts/ui-scroll-to.js"></script>
+  <script src="/resources/scripts/ui-toggle-class.js"></script>
+  <script src="/resources/scripts/ui-taburl.js"></script>
+  <script src="/resources/scripts/app.js"></script>
+  <script src="/resources/scripts/ajax.js"></script>
 <!-- endbuild -->
 </body>
 </html>
